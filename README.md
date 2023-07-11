@@ -1,7 +1,7 @@
 # Polyomino Calendar Puzzle Solver
 
 This is largely the work of Chase Meadors and has had minor configuration adjustments to make it more user friendly for solving a specific polyomino puzzle popularized in calendar form.
-Try it [here](https://martynguyen.github.io/polyomino-solver).
+Try it [here](https://jimmckeeth.github.io/calendar-polyomino-solver/).
 
 Try the original [here](https://cemulate.github.io/polyomino-solver).
 
