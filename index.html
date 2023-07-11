@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polyomino Calendar Puzzle Solver</title>
+  <!-- I guess I'll support browsers besides latest-Chrome -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2/webcomponents-bundle.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Polyomino Calendar Puzzle Solver</li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a target="_blank" href="https://github.com/jimmckeeth/calendar-polyomino-solver/">View on Github</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+
+    <div class="cell large-6 small-12">
+
+      <div class="callout secondary">
+        <p>Shade the squares to not place the polyominos. Usually this is a month square and a date square.</p>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-shrink small-12">
+          <polyomino-control id="region-create" size=10 mode="create-region"></polyomino-control>
+        </div>
+        <div class="cell auto">
+	  <a id="solve-button" class="button expanded success">Solve</a>
+          <div id="loading" style="display: none; margin-top: 15px; margin-bottom: 15px" class="grid-x">
+            <div class="cell auto">
+              <img id="loading-image" style="display: block; margin: auto">
+            </div>
+          </div>
+          <a id="clear-button" style="display: none" class="button expanded">Clear</a>
+          <div id="no-solution" style="display: none" class="callout alert">
+            <p><strong>NO SOLUTION</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="app.bundle.js"></script>
+</body>
+
+</html>
